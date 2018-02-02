@@ -1,0 +1,6 @@
+<http://www.literatureandlatte.com/freestuff/>
+
+KBWebArchiver 
+A utility class that makes it very easy to download any given URL to a webarchive. Just specify a URL string and this class will return the webarchive containing all resources. 
+
+(c) Keith Blount

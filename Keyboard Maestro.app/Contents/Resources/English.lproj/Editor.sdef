@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<!--
+   Editor.sdef
+   Keyboard Maestro
+
+   Created by Peter N Lewis on 19 March 2009.
+   Copyright 2009 Stairways Software. All rights reserved.
+-->
+<dictionary title="Keyboard Maestro Terminology">
+	<suite name="Standard Suite" code="????" description="Common classes and commands for all applications.">
+
+		<command name="open" code="aevtodoc" description="Open a document.">
+			<direct-parameter description="The file(s) to be opened.">
+				<type type="file"/>
+				<type type="file" list="yes"/>
+			</direct-parameter>
+			<result description="The opened document(s).">
+				<type type="file"/>
+				<type type="file" list="yes"/>
+			</result>
+		</command>
+
+<!--
+		<enumeration name="save options" code="savo">
+			<enumerator name="yes" code="yes " description="Save the file."/>
+			<enumerator name="no" code="no  " description="Do not save the file."/>
+			<enumerator name="ask" code="ask " description="Ask the user whether or not to save the file."/>
+		</enumeration>
+-->
+		<command name="close" code="coreclos" description="Close a document.">
+			<cocoa class="NSCloseCommand"/>
+			<access-group identifier="*"/>
+			<direct-parameter type="specifier" requires-access="r" description="the document(s) or window(s) to close."/>
+<!-- 
+			<parameter name="saving" code="savo" type="save options" optional="yes" description="Should changes be saved before closing?">
+				<cocoa key="SaveOptions"/>
+			</parameter>
+			<parameter name="saving in" code="kfil" type="file" optional="yes" description="The file in which to save the document, if so.">
+				<cocoa key="File"/>
+			</parameter>
+ -->
+		</command>
+
+<!-- 
+		<command name="save" code="coresave" description="Save a document.">
+			<access-group identifier="*"/>
+			<direct-parameter type="specifier" requires-access="r" description="The document(s) or window(s) to save."/>
+			<parameter name="in" code="kfil" type="file" optional="yes" description="The file in which to save the document.">
+				<cocoa key="File"/>
+			</parameter>
+			<parameter name="as" code="fltp" type="saveable file format" optional="yes" description="The file format to use.">
+				<cocoa key="FileType"/>
+			</parameter>
+		</command>
+
+		<enumeration name="printing error handling" code="enum">
+			<enumerator name="standard" code="lwst" description="Standard PostScript error handling">
+				<cocoa boolean-value="NO"/>
+			</enumerator>
+			<enumerator name="detailed" code="lwdt" description="print a detailed report of PostScript errors">
+				<cocoa boolean-value="YES"/>
+			</enumerator>
+		</enumeration>
+
+		<record-type name="print settings" code="pset">
+			<property name="copies" code="lwcp" type="integer" description="the number of copies of a document to be printed">
+				<cocoa key="NSCopies"/>
+			</property>
+			<property name="collating" code="lwcl" type="boolean" description="Should printed copies be collated?">
+				<cocoa key="NSMustCollate"/>
+			</property>
+			<property name="starting page" code="lwfp" type="integer" description="the first page of the document to be printed">
+				<cocoa key="NSFirstPage"/>
+			</property>
+			<property name="ending page" code="lwlp" type="integer" description="the last page of the document to be printed">
+				<cocoa key="NSLastPage"/>
+			</property>
+			<property name="pages across" code="lwla" type="integer" description="number of logical pages laid across a physical page">
+				<cocoa key="NSPagesAcross"/>
+			</property>
+			<property name="pages down" code="lwld" type="integer" description="number of logical pages laid out down a physical page">
+				<cocoa key="NSPagesDown"/>
+			</property>
+			<property name="requested print time" code="lwqt" type="date" description="the time at which the desktop printer should print the document">
+				<cocoa key="NSPrintTime"/>
+			</property>
+			<property name="error handling" code="lweh" type="printing error handling" description="how errors are handled">
+				<cocoa key="NSDetailedErrorReporting"/>
+			</property>
+			<property name="fax number" code="faxn" type="text" description="for fax number">
+				<cocoa key="NSFaxNumber"/>
+			</property>
+			<property name="target printer" code="trpr" type="text" description="for target printer">
+				<cocoa key="NSPrinterName"/>
+			</property>
+		</record-type>
+
+		<command name="print" code="aevtpdoc" description="Print a document.">
+			<direct-parameter description="The file(s), document(s), or window(s) to be printed.">
+				<type type="file" list="yes"/>
+				<type type="specifier"/>
+			</direct-parameter>
+			<parameter name="with properties" code="prdt" type="print settings" optional="yes" description="The print settings to use.">
+				<cocoa key="PrintSettings"/>
+			</parameter>
+			<parameter name="print dialog" code="pdlg" type="boolean" optional="yes" description="Should the application show the print dialog?">
+				<cocoa key="ShowPrintDialog"/>
+			</parameter>
+		</command>
+ -->
+
+		<command name="quit" code="aevtquit" description="Quit the application.">
+			<cocoa class="NSQuitCommand"/>
+<!-- 
+			<parameter name="saving" code="savo" type="save options" optional="yes" description="Should changes be saved before quitting?">
+				<cocoa key="SaveOptions"/>
+			</parameter>
+ -->
+		</command>
+
+		<command name="count" code="corecnte" description="Return the number of elements of a particular class within an object.">
+			<cocoa class="NSCountCommand"/>
+			<access-group identifier="*"/>
+			<direct-parameter type="specifier" requires-access="r" description="The objects to be counted."/>
+			<parameter name="each" code="kocl" type="type" optional="yes" description="The class of objects to be counted." hidden="yes">
+				<cocoa key="ObjectClass"/>
+			</parameter>
+			<result type="integer" description="The count."/>
+		</command>
+
+		<command name="delete" code="coredelo" description="Delete an object.">
+			<cocoa class="NSDeleteCommand"/>
+			<access-group identifier="*"/>
+			<direct-parameter type="specifier" description="The object(s) to delete."/>
+		</command>
+
+		<command name="duplicate" code="coreclon" description="Copy an object.">
+			<cocoa class="KMASDuplicateCommand"/>
+			<access-group identifier="*"/>
+			<direct-parameter type="list of specifier" requires-access="r" description="The object(s) to copy."/>
+			<parameter name="to" code="insh" type="location specifier" description="The location for the new copy or copies." optional="yes">
+				<cocoa key="ToLocation"/>
+			</parameter>
+			<result type="list of specifier" description="The duplicated objects."/>
+		</command>
+
+		<command name="exists" code="coredoex" description="Verify that an object exists.">
+			<cocoa class="NSExistsCommand"/>
+			<access-group identifier="*"/>
+			<direct-parameter type="any" requires-access="r" description="The object(s) to check."/>
+			<result type="boolean" description="Did the object(s) exist?"/>
+		</command>
+
+		<command name="make" code="corecrel" description="Create a new object.">
+			<cocoa class="NSCreateCommand"/>
+			<access-group identifier="*"/>
+			<parameter name="new" code="kocl" type="type" description="The class of the new object.">
+				<cocoa key="ObjectClass"/>
+			</parameter>
+			<parameter name="at" code="insh" type="location specifier" optional="yes" description="The location at which to insert the object.">
+				<cocoa key="Location"/>
+			</parameter>
+			<parameter name="with data" code="data" type="any" optional="yes" description="The initial contents of the object.">
+				<cocoa key="ObjectData"/>
+			</parameter>
+			<parameter name="with properties" code="prdt" type="record" optional="yes" description="The initial values for properties of the object.">
+				<cocoa key="KeyDictionary"/>
+			</parameter>
+			<result type="specifier" description="The new object."/>
+		</command>
+
+		<command name="move" code="coremove" description="Move an object to a new location.">
+			<cocoa class="KMASMoveCommand"/>
+			<access-group identifier="*"/>
+			<direct-parameter type="list of specifier" requires-access="r" description="The object(s) to move."/>
+			<parameter name="to" code="insh" type="location specifier" description="The new location for the object(s).">
+				<cocoa key="ToLocation"/>
+			</parameter>
+			<result type="list of specifier" description="The moved objects."/>
+		</command>
+		<command name="select" code="miscslct" description="Select the specified object(s)">
+			<direct-parameter type="specifier" description="the object to select"/>
+		</command>
+
+		<class name="application" code="capp" description="The application's top-level scripting object.">
+			<cocoa class="NSApplication"/>
+			<property name="name" code="pnam" type="text" access="r" description="The name of the application."/>
+			<property name="frontmost" code="pisf" type="boolean" access="r" description="Is this the active application?">
+				<cocoa key="isActive"/>
+			</property>
+			<property name="version" code="vers" type="text" access="r" description="The version number of the application."/>
+			<property name="selection" code="sele" type="list of specifier" description="the selection in the macro editor" />
+
+			<element type="window" access="r">
+				<cocoa key="orderedWindows"/>
+			</element>
+			<responds-to command="open">
+				<cocoa method="handleOpenScriptCommand:"/>
+			</responds-to>
+			<responds-to command="print">
+				<cocoa method="handlePrintScriptCommand:"/>
+			</responds-to>
+			<responds-to command="quit">
+				<cocoa method="handleQuitScriptCommand:"/>
+			</responds-to>
+			<responds-to name="setMacroEnable">
+				<cocoa method="handleSetMacroEnable:"/>
+			</responds-to>
+			<responds-to name="importMacros">
+				<cocoa method="handleImportMacros:"/>
+				<parameter name="disabled" code="KMDi" type="boolean" optional="yes" description="force disable the imported Macros or Macro Groups">
+					<cocoa key="disabled"/>
+				</parameter>
+			</responds-to>
+			<responds-to name="deleteMacro">
+				<cocoa method="handleDeleteMacro:"/>
+			</responds-to>
+			<responds-to name="deleteMacroGroup">
+				<cocoa method="handleDeleteMacroGroup:"/>
+			</responds-to>
+			<responds-to name="editMacro">
+				<cocoa method="handleEditMacro:"/>
+			</responds-to>
+			<responds-to name="selectedMacros">
+				<cocoa method="handleSelectedMacros:"/>
+			</responds-to>
+			<responds-to name="reload">
+				<cocoa method="handleReload:"/>
+			</responds-to>
+			<responds-to name="geturl">
+				<cocoa method="handleGetURL:"/>
+			</responds-to>
+		</class>
+
+		<class name="window" code="cwin" description="A window.">
+			<cocoa class="NSWindow"/>
+			<property name="name" code="pnam" type="text" access="r" description="The title of the window.">
+				<cocoa key="title"/>
+			</property>
+			<property name="id" code="ID  " type="integer" access="r" description="The unique identifier of the window.">
+				<cocoa key="uniqueID"/>
+			</property>
+			<property name="index" code="pidx" type="integer" description="The index of the window, ordered front to back.">
+				<cocoa key="orderedIndex"/>
+			</property>
+			<property name="bounds" code="pbnd" type="rectangle" description="The bounding rectangle of the window.">
+				<cocoa key="boundsAsQDRect"/>
+			</property>
+			<property name="closeable" code="hclb" type="boolean" access="r" description="Does the window have a close button?">
+				<cocoa key="hasCloseBox"/>
+			</property>
+			<property name="miniaturizable" code="ismn" type="boolean" access="r" description="Does the window have a minimize button?">
+				<cocoa key="isMiniaturizable"/>
+			</property>
+			<property name="miniaturized" code="pmnd" type="boolean" description="Is the window minimized right now?">
+				<cocoa key="isMiniaturized"/>
+			</property>
+			<property name="resizable" code="prsz" type="boolean" access="r" description="Can the window be resized?">
+				<cocoa key="isResizable"/>
+			</property>
+			<property name="visible" code="pvis" type="boolean" description="Is the window visible right now?">
+				<cocoa key="isVisible"/>
+			</property>
+			<property name="zoomable" code="iszm" type="boolean" access="r" description="Does the window have a zoom button?">
+				<cocoa key="isZoomable"/>
+			</property>
+			<property name="zoomed" code="pzum" type="boolean" description="Is the window zoomed right now?">
+				<cocoa key="isZoomed"/>
+			</property>
+<!-- 
+			<property name="document" code="docu" type="document" access="r" description="The document whose contents are displayed in the window."/>
+ -->
+			<responds-to command="close">
+				<cocoa method="handleCloseScriptCommand:"/>
+			</responds-to>
+<!-- 
+			<responds-to command="print">
+				<cocoa method="handlePrintScriptCommand:"/>
+			</responds-to>
+			<responds-to command="save">
+				<cocoa method="handleSaveScriptCommand:"/>
+			</responds-to>
+ -->
+		</class>
+
+	</suite>
+
+	<suite name="Keyboard Maestro Suite" code="MKKE" description="Terms specific to Keyboard Maestro.">
+
+		<class name="application" code="capp" description="Keyboard Maestro application class." inherits="application">
+			<cocoa class="NSApplication"/>
+
+			<property name="global macro group" code="KMgg" type="macro group" access="r" description="the global macro group" />
+			<property name="disabled group holder" code="KMDg" type="disabled macro group holder" access="r" description="the disabled macro group holder" />
+			<property name="selected macro groups" code="KMsg" type="list of specifier" description="the selected macro groups / smart groups in the macro editor" />
+			<property name="selected macros" code="KMsm" type="list of specifier" description="the selected macros in the macro editor" />
+
+			<element type="macro group"/>
+			<element type="smart group"/>
+			<element type="macro"/>
+
+		</class>
+
+		<class name="macro group" code="MKmg" description="A macro group.">
+			<cocoa class="KMASMacroGroup"/>
+			
+			<responds-to command="select">
+				<cocoa method="handleSelectCommand:"/>
+			</responds-to>
+
+			<property name="id" code="ID  " type="text" access="r" description="The unique identifier.">
+				<cocoa key="uniqueID"/>
+			</property>
+			<property name="name" code="pnam" type="text" access="rw" description="the macro group's name"/>
+			<property name="selected" code="KMse" type="boolean" access="r" description="is the macro group selected?"/>
+			<property name="creation date" code="ascd" type="date" access="r" description="the date on which the item was created" />
+			<property name="enabled" code="MKen" type="boolean" access="rw" description="is the macro group enabled?"/>
+			<property name="disabled on this Mac" code="MKdM" type="boolean" access="rw" description="is the macro group disabled on this Mac?"/>
+			<property name="available application xml" code="MGaa" type="text" access="rw" description="the available application XML"/>
+			<property name="available window xml" code="MGwa" type="text" access="rw" description="the available window XML"/>
+			<property name="activation xml" code="MGpa" type="text" access="rw" description="the activation XML"/>
+
+			<element type="macro"/>
+		</class>
+
+		<class name="smart group" code="MKsg" description="A smart group.">
+			<cocoa class="KMASSmartGroup"/>
+			
+			<responds-to command="select">
+				<cocoa method="handleSelectCommand:"/>
+			</responds-to>
+
+			<property name="id" code="ID  " type="text" access="r" description="The unique identifier.">
+				<cocoa key="uniqueID"/>
+			</property>
+			<property name="selected" code="KMse" type="boolean" access="r" description="is the smart group selected?"/>
+			<property name="name" code="pnam" type="text" access="rw" description="the smart group's name"/>
+			<property name="creation date" code="ascd" type="date" access="r" description="The creation date identifier." />
+			<property name="search strings" code="KMss" type="list of text" access="rw" description="The search strings" />
+		</class>
+
+		<class name="disabled macro group holder" code="MKdg" description="The disabled macro group holder">
+			<cocoa class="KMASDisabledGroupHolder"/>
+			
+			<responds-to command="select">
+				<cocoa method="handleSelectCommand:"/>
+			</responds-to>
+
+			<property name="id" code="ID  " type="text" access="r" description="The unique identifier.">
+				<cocoa key="uniqueID"/>
+			</property>
+			<property name="name" code="pnam" type="text" access="r" description="the disabled macro group holder's name"/>
+			<property name="selected" code="KMse" type="boolean" access="r" description="is the disabled macro group holder selected?"/>
+		</class>
+
+		<class name="macro" code="MKma" description="A macro.">
+			<cocoa class="KMASMacro"/>
+			
+			<responds-to command="select">
+				<cocoa method="handleSelectCommand:"/>
+			</responds-to>
+
+			<property name="id" code="ID  " type="text" access="r" description="The unique identifier.">
+				<cocoa key="uniqueID"/>
+			</property>
+			<property name="selected" code="KMse" type="boolean" access="r" description="is the macro selected?"/>
+			<property name="name" code="pnam" type="text" access="rw" description="the macro's name"/>
+			<property name="macro group" code="KMmg" type="macro group" access="r" description="the containing macro group" />
+
+			<property name="enabled" code="MKen" type="boolean" access="rw" description="is the macro enabled?"/>
+			<property name="creation date" code="ascd" type="date" access="r" description="the date on which the item was created" />
+			<property name="modification date" code="asmo" type="date" access="r" description="the date on which the item was modified" />
+
+			<element type="trigger"/>
+			<element type="action"/>
+		</class>
+
+		<class name="trigger" code="MKmt" description="A trigger">
+			<cocoa class="KMASTrigger"/>
+			
+			<property name="description" code="KMds" type="text" access="r" description="the trigger's description">
+				<cocoa key="descriptionAS"/>
+			</property>
+			<property name="xml" code="MTxm" type="text" access="rw" description="the trigger XML"/>
+		</class>
+
+		<class name="action" code="MKac" description="An action">
+			<cocoa class="KMASAction"/>
+			
+			<responds-to command="select">
+				<cocoa method="handleSelectCommand:"/>
+			</responds-to>
+
+			<property name="id" code="ID  " type="text" access="r" description="The unique identifier.">
+				<cocoa key="uniqueID"/>
+			</property>
+			<property name="name" code="pnam" type="text" access="rw" description="the action's name"/>
+			<property name="enabled" code="MKen" type="boolean" access="rw" description="is the action enabled?"/>
+			<property name="xml" code="MTxm" type="text" access="rw" description="the action XML"/>
+
+			<property name="disclosed" code="MKdi" type="boolean" access="rw" description="is the action disclosed?"/>
+			<property name="timeout period" code="MKto" type="real" access="rw" description="the action's timeout period"/>
+			<property name="timeout aborts" code="MKta" type="boolean" access="rw" description="does the action abort the macro on timeout"/>
+			<property name="timeout notifies" code="MKtn" type="boolean" access="rw" description="does the action notify on timeout"/>
+			<property name="failure aborts" code="MKfa" type="boolean" access="rw" description="does the action abort the macro on failure"/>
+			<property name="failure notifies" code="MKfn" type="boolean" access="rw" description="does the action notify on failure"/>
+			<property name="notes" code="MKnt" type="text" access="rw" description="the action's notes"/>
+			<property name="color" code="MKcl" type="text" access="rw" description="the action's color"/>
+
+			<property name="thenactions" code="KMia" type="action list" access="r" description="the then actions" />
+			<property name="thenactions disclosed" code="MKtd" type="boolean" access="rw" description="are the thenactions disclosed?"/>
+			<property name="elseactions" code="KMea" type="action list" access="r" description="the else actions" />
+			<property name="elseactions disclosed" code="MKed" type="boolean" access="rw" description="are the elseactions disclosed?"/>
+
+			<property name="actions disclosed" code="MKad" type="boolean" access="rw" description="are the actions disclosed?"/>
+
+			<element type="action"/>
+			<element type="case entry"/>
+		</class>
+
+		<class name="case entry" plural ="case entries" code="MKce" description="A case entry">
+			<cocoa class="KMASCaseEntry"/>
+			
+			<property name="id" code="ID  " type="text" access="r" description="The unique identifier.">
+				<cocoa key="uniqueID"/>
+			</property>
+			<property name="xml" code="MTxm" type="text" access="rw" description="the case entry XML"/>
+
+			<property name="actions disclosed" code="MKad" type="boolean" access="rw" description="are the actions disclosed?"/>
+
+			<element type="action"/>
+		</class>
+
+		<class name="action list" code="MKal" description="An action list">
+			<cocoa class="KMASActionList"/>
+			
+			<property name="id" code="ID  " type="text" access="r" description="The unique identifier.">
+				<cocoa key="uniqueID"/>
+			</property>
+			<property name="xml" code="MTxm" type="text" access="rw" description="the action list XML"/>
+
+			<element type="action"/>
+		</class>
+
+		<command name="setMacroEnable" code="MKKEKMEd" description="Enables or Disabled a Macro Group or Macro by name or UID.">
+			<direct-parameter description="The name or UID of Macro Group or Macro.">
+				<type type="text" />
+			</direct-parameter>
+			<parameter name="enable" code="KMEn" type="boolean" optional="no" description="enable or disable the Macro Group or Macro.">
+				<cocoa key="enable"/>
+			</parameter>
+		</command>
+
+		<command name="editMacro" code="MKKEKMed" description="Start editing a Macro Group or Macro by name or UID.">
+			<direct-parameter description="The name or UID of Macro Group or Macro.">
+				<type type="text" />
+			</direct-parameter>
+		</command>
+		
+		<command name="selectedMacros" code="MKKEKMsl" description="Selected Macro Group or Macro UIDs.">
+			<result description="The UID of the selected Macro Group or Macros.">
+				<type type="text" list="yes"/>
+			</result>
+		</command>
+		
+		<command name="importMacros" code="MKKEKMIm" description="Import macros">
+			<direct-parameter description="URL to kmmacros file or the XML of the macros to import">
+				<type type="any" />
+			</direct-parameter>
+		</command>
+
+		<command name="deleteMacro" code="MKKEKMDl" description="Delete macro">
+			<direct-parameter description="The UID or unique name of the macro to delete">
+				<type type="text" />
+			</direct-parameter>
+		</command>
+
+		<command name="deleteMacroGroup" code="MKKEKMDg" description="Delete macro group">
+			<direct-parameter description="The UID or unique name of the macro group to delete">
+				<type type="text" />
+			</direct-parameter>
+		</command>
+
+		<command name="reload" code="MKKMKMrl" description="Reload macros.">
+		</command>
+
+	</suite>
+	
+	<suite name="Standard URL Suite" code="GURL" description="The standard URL suite.">
+
+		<command name="geturl" code="GURLGURL" description="Handled the registration URL.">
+			<direct-parameter type="text" description="the registration URL." />
+		</command>
+
+	</suite>
+</dictionary>

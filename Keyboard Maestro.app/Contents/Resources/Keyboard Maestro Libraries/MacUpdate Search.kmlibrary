@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Web</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Use the status menu to search for an application on MacUpdate.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>Alpha</key>
+							<integer>100</integer>
+							<key>Blue</key>
+							<integer>0</integer>
+							<key>Green</key>
+							<integer>0</integer>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>Search</string>
+							<key>Red</key>
+							<integer>0</integer>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+							<key>Title</key>
+							<string>MacUpdate Search</string>
+							<key>URL</key>
+							<string>http://www.macupdate.com/search.php?keywords=%Search%</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>MacUpdate Search</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>MacroTriggerType</key>
+							<string>StatusMenu</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>A31EB4F6-A0EC-4659-9D1F-EF19356DD557</string>
+</dict>
+</plist>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Application Control</string>
+	<key>Category2</key>
+	<string>Windows</string>
+	<key>Description</key>
+	<string>Whenever the Finder activates, bring all of its windows to the front.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>SelectMenuItem</string>
+							<key>Menu</key>
+							<array>
+								<string>Window</string>
+								<string>Bring All to Front</string>
+							</array>
+							<key>StopOnFailure</key>
+							<false/>
+							<key>TargetApplication</key>
+							<dict>
+								<key>BundleIdentifier</key>
+								<string>com.apple.finder</string>
+								<key>Creator</key>
+								<integer>1296122707</integer>
+								<key>FileType</key>
+								<integer>1179534418</integer>
+								<key>Name</key>
+								<string>Finder</string>
+								<key>NewFile</key>
+								<string>/System/Library/CoreServices/Finder.app</string>
+							</dict>
+							<key>TargetingType</key>
+							<string>Specific</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Always Bring All Finder Windows to Front</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>Application</key>
+							<dict>
+								<key>BundleIdentifier</key>
+								<string>com.apple.finder</string>
+								<key>Creator</key>
+								<integer>1296122707</integer>
+								<key>FileType</key>
+								<integer>1179534418</integer>
+								<key>Name</key>
+								<string>Finder.app</string>
+								<key>NewFile</key>
+								<string>/System/Library/CoreServices/Finder.app</string>
+							</dict>
+							<key>FireType</key>
+							<string>Activate</string>
+							<key>FireType2</key>
+							<string>Activate</string>
+							<key>MacroTriggerType</key>
+							<string>Application</string>
+							<key>RepeatTime</key>
+							<integer>60</integer>
+							<key>Target</key>
+							<string>Specific</string>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>3E86DCD0-D350-4DC6-A16D-81AC25E3FB24</string>
+</dict>
+</plist>

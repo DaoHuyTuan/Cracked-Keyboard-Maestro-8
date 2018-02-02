@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>AuthorURL</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>System Control</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Set your Network Location when your Wireless Network connects to known networks like Home and Work.  You will need to adjust the macros to match your networks.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>SetNetworkLocation</string>
+							<key>NetworkLocation</key>
+							<string>Home</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>ModificationDate</key>
+					<real>390198210.59854198</real>
+					<key>Name</key>
+					<string>Set Network Location to Home</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>Connected</key>
+							<true/>
+							<key>MacroTriggerType</key>
+							<string>WirelessNetwork</string>
+							<key>MatchType</key>
+							<string>NameIs</string>
+							<key>Name</key>
+							<string>My Home Network</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>SetNetworkLocation</string>
+							<key>NetworkLocation</key>
+							<string>Work</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>ModificationDate</key>
+					<real>390198224.30298603</real>
+					<key>Name</key>
+					<string>Set Network Location to Work</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>Connected</key>
+							<true/>
+							<key>MacroTriggerType</key>
+							<string>WirelessNetwork</string>
+							<key>MatchType</key>
+							<string>NameIs</string>
+							<key>Name</key>
+							<string>My Work Network</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>826083B4-5293-4517-B3A1-C8DFC484D826</string>
+</dict>
+</plist>

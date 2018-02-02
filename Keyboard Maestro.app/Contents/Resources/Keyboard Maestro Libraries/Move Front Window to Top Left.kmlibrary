@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Windows</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Use the status menu to move the front window to the top left of the main screen.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>Action</key>
+							<string>MoveWindowTo</string>
+							<key>Horizontal</key>
+							<integer>0</integer>
+							<key>HorizontalExpression</key>
+							<string>0</string>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>ManipulateWindow</string>
+							<key>Targeting</key>
+							<string>FrontWindow</string>
+							<key>Vertical</key>
+							<integer>20</integer>
+							<key>VerticalExpression</key>
+							<string>20</string>
+							<key>WindowIndex</key>
+							<integer>2</integer>
+							<key>WindowIndexExpression</key>
+							<string>2</string>
+							<key>WindowName</key>
+							<string></string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Move Front Window to Top Left</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>MacroTriggerType</key>
+							<string>StatusMenu</string>
+						</dict>
+					</array>
+					<key>UID</key>
+					<string>4EF8BF35-6774-4FE4-A268-F3DD946C5982</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+			<key>UID</key>
+			<string>DA8512F7-F323-46B1-8319-752E0495CFD0</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>DB11227B-45A6-4019-BB6E-22E0918033FB</string>
+</dict>
+</plist>

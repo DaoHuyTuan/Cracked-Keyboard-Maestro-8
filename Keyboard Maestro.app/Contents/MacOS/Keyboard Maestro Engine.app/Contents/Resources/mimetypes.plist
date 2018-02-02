@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>html</key>
+	<string>text/html; charset=utf-8</string>
+	<key>txt</key>
+	<string>text/plain</string>
+	<key>js</key>
+	<string>application/x-javascript</string>
+	<key>css</key>
+	<string>text/css</string>
+	<key>png</key>
+	<string>image/png</string>
+	<key>ico</key>
+	<string>image/x-icon</string>
+</dict>
+</plist>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Switchers</string>
+	<key>Category2</key>
+	<string>Application Control</string>
+	<key>Default</key>
+	<true/>
+	<key>Description</key>
+	<string>Activate the application launcher with Command-Control-Tab.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>Alpha</key>
+							<integer>70</integer>
+							<key>ApplicationMask</key>
+							<integer>15</integer>
+							<key>Blue</key>
+							<integer>128</integer>
+							<key>ExcludeRunning</key>
+							<false/>
+							<key>ExcludedApplications</key>
+							<array/>
+							<key>Green</key>
+							<integer>128</integer>
+							<key>HideOthers</key>
+							<false/>
+							<key>IncludedApplications</key>
+							<array/>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<false/>
+							<key>MacroActionType</key>
+							<string>ApplicationLauncher</string>
+							<key>Red</key>
+							<integer>0</integer>
+							<key>SwitcherUnderMouse</key>
+							<false/>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>48</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>4352</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Switcher Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>Activate Application Launcher</string>
+</dict>
+</plist>

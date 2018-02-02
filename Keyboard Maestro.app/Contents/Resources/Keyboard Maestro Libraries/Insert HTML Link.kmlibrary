@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Text</string>
+	<key>Category2</key>
+	<string>Web</string>
+	<key>Description</key>
+	<string>Use the status menu to be prompted for a title and URL, which is then typed or copied as an HTML link element.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>Comment</string>
+							<key>Text</key>
+							<string>Prompts the user for a URL and a title, then inserts an HTML link and resets the clipboard to what it was before this macro was run.</string>
+							<key>Title</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>Buttons</key>
+							<array>
+								<dict>
+									<key>Button</key>
+									<string>Type</string>
+									<key>Cancel</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Button</key>
+									<string>Copy/C</string>
+									<key>Cancel</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Button</key>
+									<string>Cancel/.</string>
+									<key>Cancel</key>
+									<true/>
+								</dict>
+							</array>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>PromptForUserInput</string>
+							<key>Prompt</key>
+							<string>Enter the URL and title.</string>
+							<key>ResultButtonVariable</key>
+							<string>Result Button</string>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+							<key>Title</key>
+							<string>Create an HTML Link</string>
+							<key>Variables</key>
+							<array>
+								<dict>
+									<key>Default</key>
+									<string>%Variable%Link Title%</string>
+									<key>Variable</key>
+									<string>Link Title</string>
+								</dict>
+								<dict>
+									<key>Default</key>
+									<string>%Variable%Link URL%</string>
+									<key>Variable</key>
+									<string>Link URL</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Conditions</key>
+							<dict>
+								<key>ConditionList</key>
+								<array>
+									<dict>
+										<key>ConditionType</key>
+										<string>Variable</string>
+										<key>Variable</key>
+										<string>Result Button</string>
+										<key>VariableConditionType</key>
+										<string>Contains</string>
+										<key>VariableValue</key>
+										<string>Copy</string>
+									</dict>
+								</array>
+								<key>ConditionListMatch</key>
+								<string>All</string>
+							</dict>
+							<key>ElseActions</key>
+							<array>
+								<dict>
+									<key>Action</key>
+									<string>ByTyping</string>
+									<key>IsActive</key>
+									<true/>
+									<key>IsDisclosed</key>
+									<true/>
+									<key>MacroActionType</key>
+									<string>InsertText</string>
+									<key>Paste</key>
+									<false/>
+									<key>Text</key>
+									<string>&lt;a href="%Variable%Link URL%"&gt;%Variable%Link Title%&lt;/a&gt;</string>
+								</dict>
+							</array>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>IfThenElse</string>
+							<key>ThenActions</key>
+							<array>
+								<dict>
+									<key>IsActive</key>
+									<true/>
+									<key>IsDisclosed</key>
+									<true/>
+									<key>JustDisplay</key>
+									<false/>
+									<key>MacroActionType</key>
+									<string>SetClipboardToText</string>
+									<key>Text</key>
+									<string>&lt;a href="%Variable%Link URL%"&gt;%Variable%Link Title%&lt;/a&gt;</string>
+								</dict>
+							</array>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Insert HTML Link</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>MacroTriggerType</key>
+							<string>StatusMenu</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>42B1BD84-EA0D-4069-9BAB-91DA4EAB87D6</string>
+</dict>
+</plist>

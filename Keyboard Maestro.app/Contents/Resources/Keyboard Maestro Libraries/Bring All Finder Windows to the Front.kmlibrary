@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>AuthorURL</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Application Control</string>
+	<key>Category2</key>
+	<string>Windows</string>
+	<key>Description</key>
+	<string>Press Control-Escape to bring the Finder and all of its windows to the front.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>AlreadyActivatedActionType</key>
+							<string>Normal</string>
+							<key>Application</key>
+							<dict>
+								<key>BundleIdentifier</key>
+								<string>com.apple.finder</string>
+								<key>Creator</key>
+								<integer>1296122707</integer>
+								<key>FileType</key>
+								<integer>1179534418</integer>
+								<key>Name</key>
+								<string>Finder</string>
+								<key>NewFile</key>
+								<string>/System/Library/CoreServices/Finder.app</string>
+							</dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>ActivateApplication</string>
+							<key>ReopenWindows</key>
+							<false/>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+						</dict>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>SelectMenuItem</string>
+							<key>Menu</key>
+							<array>
+								<string>Window</string>
+								<string>Bring All to Front</string>
+							</array>
+							<key>StopOnFailure</key>
+							<false/>
+							<key>TargetApplication</key>
+							<dict>
+								<key>BundleIdentifier</key>
+								<string>com.apple.finder</string>
+								<key>Creator</key>
+								<integer>1296122707</integer>
+								<key>FileType</key>
+								<integer>1179534418</integer>
+								<key>Name</key>
+								<string>Finder</string>
+								<key>NewFile</key>
+								<string>/System/Library/CoreServices/Finder.app</string>
+							</dict>
+							<key>TargetingType</key>
+							<string>Specific</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Bring All Finder Windows to Front</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>53</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>4096</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>53476C87-E321-4085-9BBC-BCD8F32E6938</string>
+</dict>
+</plist>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>AuthorURL</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Interface Control</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Use Control-F1 to record a quick macros that you can play back with Option-F1. This is an excellent way to quickly reformat text. Try to limit yourself to keystrokes when recording for robustness.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>AddToMacroPalette</key>
+							<false/>
+							<key>AddToStatusMenu</key>
+							<false/>
+							<key>EnableRepeat</key>
+							<true/>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<false/>
+							<key>KeyCode</key>
+							<integer>122</integer>
+							<key>MacroActionType</key>
+							<string>QuickMacro</string>
+							<key>Modifiers</key>
+							<integer>2048</integer>
+							<key>QuickMacroUID</key>
+							<string>31393F5A-FB52-4BF5-A1CA-4252B04A0523</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Quick Macro for ⌥F1</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>122</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>4096</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>Record Quick Macros</string>
+</dict>
+</plist>

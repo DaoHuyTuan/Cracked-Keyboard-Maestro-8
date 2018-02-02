@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>AuthorURL</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Windows</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Press Command-Option-0 to reopen the default window for an application. When switching to an application with no open windows using the program switcher (either Apple’s or Keyboard Maestro’s) the default window is not displayed. The macro uses a simple AppleScript to cause the front application to redisplay its default window.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>DisplayKind</key>
+							<string>None</string>
+							<key>File</key>
+							<data>
+							</data>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>ExecuteAppleScript</string>
+							<key>NewFile</key>
+							<string></string>
+							<key>Text</key>
+							<string>tell application "System Events"
+	set f to file of first item of (processes whose frontmost is true)
+	open f
+end tell
+</string>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+							<key>TrimResults</key>
+							<true/>
+							<key>UseText</key>
+							<true/>
+							<key>Variable</key>
+							<string>Variable</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Open Default Window</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>29</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>2304</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>7D9C8517-6EA2-4EA3-B7E6-4DC9F5CF4BF3</string>
+</dict>
+</plist>

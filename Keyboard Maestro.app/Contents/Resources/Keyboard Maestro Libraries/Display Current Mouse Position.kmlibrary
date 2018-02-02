@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Philippe Martin</string>
+	<key>AuthorURL</key>
+	<string>http://flip.macrobyte.net/software/keyboardmaestro</string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Interface Control</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Use the status menu to display the current mouse location relative to the screen and the front window.  The display is delayed by five seconds to allow you to position the mouse after selecting from the status menu.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>Pause</string>
+							<key>Seconds</key>
+							<real>5</real>
+							<key>Time</key>
+							<string>5</string>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+						</dict>
+						<dict>
+							<key>Action</key>
+							<string>DisplayWindow</string>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>InsertText</string>
+							<key>Paste</key>
+							<false/>
+							<key>Text</key>
+							<string>Cursor position relative to:
+
+Screen:	→ %Calculate%MOUSEX()% / ↓ %Calculate%MOUSEY()%
+Window: → %Calculate%MOUSEX()-WINDOW(1,Left)% / ↓ %Calculate%MOUSEY()-WINDOW(1,Top)% / ← %Calculate%WINDOW(1,Right)-MOUSEX()% / ↑ %Calculate%WINDOW(1,Bottom)-MOUSEY()%</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Display Current Mouse Position</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>MacroTriggerType</key>
+							<string>StatusMenu</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>FB0B6E6A-236E-4A24-AC42-92CA3F38EB1D</string>
+</dict>
+</plist>

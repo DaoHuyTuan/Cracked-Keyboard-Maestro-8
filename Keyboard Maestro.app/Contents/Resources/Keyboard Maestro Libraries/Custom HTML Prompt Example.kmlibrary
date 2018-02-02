@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>AuthorURL</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Interface Control</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>This example macro shows what you can do with the Custom HTML Prompt action.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>CreationDate</key>
+			<real>453018705.83122802</real>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>CustomPrompt</string>
+							<key>Text</key>
+							<string>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;Keyboard Maestro Form Example Testing&lt;/title&gt;
+	&lt;style type="text/css"&gt;
+
+body {
+	background-color: #DBE8F9;
+	font: 11px "Lucida Grande", serif;
+	color: #5A698B;
+	width: 420px;
+	margin: 0;
+}
+
+form {
+	font: 11px "Chalkduster", serif;
+}
+
+#title {
+	width: 100%;
+	color: #5A698B;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+form {
+	width: 100%;
+}
+
+.col1 {
+	text-align: right;
+	width: 105px;
+	padding-top: 5px;
+	height: 31px;
+	margin: 0;
+	float: left;
+}
+
+.message {
+	height: 75px;
+}
+
+.selection {
+	height: 75px;
+}
+
+.col2 {
+	width: 310px;
+	height: 31px;
+	display: block;
+	float: left;
+	margin: 0;
+}
+
+div.row {
+	clear: both;
+	width: 100%;
+}
+
+.submit {
+	height: 29px;
+	width: 100%;
+	padding-top: 5px;
+	clear: both;
+} 
+
+.input {
+	width: 240px;
+	background-color: #fff;
+	color: #5A698B;
+	margin: 4px 0 5px 8px;
+	border: 1px solid #8595B2;
+}
+
+.center {
+	text-align: center;
+}
+
+	&lt;/style&gt; 
+&lt;/head&gt;
+&lt;body data-kmwindow="SCREEN(Main,Left,20%),SCREEN(Main,Top,20%),420,560"&gt;
+	&lt;div id="title"&gt;
+		Keyboard Maestro Form Example
+	&lt;/div&gt;
+&lt;form action="#" method="post"&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Name:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;input name="Web_Name" class="input" type="text" id="name" autofocus /&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Email:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;input name="Web_Email" class="input" type="text" id="email" /&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Password:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;input name="Web_Password" class="input" type="password" id="password" /&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Checkbox:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;input name="Web_Checkbox" class="input" type="checkbox" id="checkbox" /&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Radio A:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;input name="Web_Radio" class="input" type="radio" value="A" checked="yes" id="radio1" /&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Radio B:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;input name="Web_Radio" class="input" type="radio" value="B" id="radio2" /&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Radio C:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;input name="Web_Radio" class="input" type="radio" value="C" id="radio3" /&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Popup Menu:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;select name="Web_Popup" &gt; 
+		  &lt;option value="CA" &gt;California -- CA&lt;/option&gt;
+		  &lt;option value="CO" &gt;Colorado -- CO&lt;/option&gt;
+		  &lt;option value="CN" &gt;Connecticut -- CN&lt;/option&gt;
+		  &lt;option value="DA" &gt;Dalifornia -- DA&lt;/option&gt;
+		  &lt;option value="DO" &gt;Dolorado -- DO&lt;/option&gt;
+		  &lt;option value="DN" &gt;Donnecticut -- DN&lt;/option&gt;
+		&lt;/select&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1 selection"&gt;Selection:&lt;/label&gt; &lt;span class="col2 selection"&gt;
+		&lt;select name="Web_Selection" multiple="yes" &gt; 
+		  &lt;option value="CA" &gt;California -- CA&lt;/option&gt;
+		  &lt;option value="CO" &gt;Colorado -- CO&lt;/option&gt;
+		  &lt;option value="CN" &gt;Connecticut -- CN&lt;/option&gt;
+		  &lt;option value="DA" &gt;Dalifornia -- DA&lt;/option&gt;
+		  &lt;option value="DO" &gt;Dolorado -- DO&lt;/option&gt;
+		  &lt;option value="DN" &gt;Donnecticut -- DN&lt;/option&gt;
+		&lt;/select&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1"&gt;Ignored:&lt;/label&gt; &lt;span class="col2"&gt;
+		&lt;input name="Web_Ignored" class="input" type="text" id="ignored" data-kmignore /&gt;
+		&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;label class="col1 message"&gt;Message:&lt;/label&gt; &lt;span class="col2 message"&gt;&lt;textarea class="input" rows="4" name="Web_Message" id="message"&gt;&lt;/textarea&gt;&lt;/span&gt; 
+	&lt;/div&gt;
+	&lt;div class="center submit"&gt;
+		&lt;button name="Resize" type="button" onclick="window.KeyboardMaestro.ResizeWindow('SCREEN(Main,Left,20%),SCREEN(Main,Top,20%),700,700')"&gt;Resize&lt;/button&gt; &lt;button name="Cancel" type="button" onclick="window.KeyboardMaestro.Cancel('Cancel')"&gt;Cancel&lt;/button&gt; &lt;button name="OK" type="button" onclick="window.KeyboardMaestro.Submit('OK')"&gt;OK&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+&lt;script&gt;
+
+function KMWindow() {
+	return "SCREEN(Main,Left,80%),SCREEN(Main,Top,80%),420, 700";
+}
+
+function KMInit() {
+	document.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');
+}
+
+
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</string>
+							<key>UseText</key>
+							<true/>
+						</dict>
+					</array>
+					<key>CreationDate</key>
+					<real>453879049.582955</real>
+					<key>IsActive</key>
+					<true/>
+					<key>ModificationDate</key>
+					<real>458652493.192222</real>
+					<key>Name</key>
+					<string>Custom HTML Prompt Example</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>MacroTriggerType</key>
+							<string>StatusMenu</string>
+						</dict>
+					</array>
+					<key>UID</key>
+					<string>4AD03836-C696-4DE0-A61D-D915E371949A</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+			<key>ToggleMacroUID</key>
+			<string>778C08EB-14C4-4747-AF9E-ABD7E90CDA90</string>
+			<key>UID</key>
+			<string>DA8512F7-F323-46B1-8319-752E0495CFD0</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>F33819CB-A877-40E9-B916-2E7FE879A961</string>
+</dict>
+</plist>

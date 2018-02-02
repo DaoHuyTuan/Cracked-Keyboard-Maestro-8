@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Christopher Stone</string>
+	<key>AuthorURL</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Interface Control</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Show the Services Menu when you press F1.  This is also an example of how to use APPLICATION in the Select Menu Item action.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>SelectMenuItem</string>
+							<key>Menu</key>
+							<array>
+								<string>APPLICATION</string>
+								<string>Services</string>
+								<string></string>
+							</array>
+							<key>TargetingType</key>
+							<string>Front</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>ModificationDate</key>
+					<real>415597526.04938602</real>
+					<key>Name</key>
+					<string>Show Services Menu</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>122</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>0</integer>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>0BA93D03-6E7C-4F74-8D76-6C5B84D05EC6</string>
+</dict>
+</plist>

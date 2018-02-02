@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>AuthorURL</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Smart Groups</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>A Smart Group listing all macros.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>IsActive</key>
+			<true/>
+			<key>SearchStrings</key>
+			<array>
+				<string>all:</string>
+			</array>
+			<key>Name</key>
+			<string>All Macros</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>All Macros Smart Group</string>
+</dict>
+</plist>

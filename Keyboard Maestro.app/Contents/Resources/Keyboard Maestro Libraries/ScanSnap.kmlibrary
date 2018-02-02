@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>AuthorURL</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>System Control</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Launch the ScanSnap Manager when an ScanSnap scanner is connected (or opened), and quit it when a ScanSnap scanner is disconnected (or closed).</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>AllWindows</key>
+							<true/>
+							<key>AlreadyActivatedActionType</key>
+							<string>Normal</string>
+							<key>Application</key>
+							<dict>
+								<key>BundleIdentifier</key>
+								<string>jp.co.pfu.ScanSnap.V10L10</string>
+								<key>Name</key>
+								<string>ScanSnap Manager</string>
+								<key>NewFile</key>
+								<string>/Applications/ScanSnap Manager.app</string>
+							</dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>ActivateApplication</string>
+							<key>ReopenWindows</key>
+							<false/>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>ModificationDate</key>
+					<real>390195153.91760898</real>
+					<key>Name</key>
+					<string>ScanSnap Attached</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>Attach</key>
+							<true/>
+							<key>MacroTriggerType</key>
+							<string>USBDevice</string>
+							<key>Name</key>
+							<string>ScanSnap</string>
+							<key>TargetType</key>
+							<string>Containing</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>Action</key>
+							<string>Quit</string>
+							<key>Application</key>
+							<dict>
+								<key>BundleIdentifier</key>
+								<string>jp.co.pfu.ScanSnap.V10L10</string>
+								<key>Name</key>
+								<string>ScanSnap Manager</string>
+								<key>NewFile</key>
+								<string>/Applications/ScanSnap Manager.app</string>
+							</dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>QuitSpecificApp</string>
+							<key>Target</key>
+							<string>Specific</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>ModificationDate</key>
+					<real>390195161.151016</real>
+					<key>Name</key>
+					<string>ScanSnap Detatched</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>Attach</key>
+							<false/>
+							<key>MacroTriggerType</key>
+							<string>USBDevice</string>
+							<key>Name</key>
+							<string>ScanSnap</string>
+							<key>TargetType</key>
+							<string>Containing</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>C9619FE3-8CC7-40FE-9D31-9F554E5B0B68</string>
+</dict>
+</plist>

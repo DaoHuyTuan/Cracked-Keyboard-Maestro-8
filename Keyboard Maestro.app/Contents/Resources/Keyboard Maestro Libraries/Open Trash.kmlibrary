@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Interface Control</string>
+	<key>Category2</key>
+	<string>Application Control</string>
+	<key>Description</key>
+	<string>Use Control-Delete to open the Trash folder in the Finder. This could be useful to anyone who keeps the Dock hidden.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>DisplayKind</key>
+							<string>None</string>
+							<key>File</key>
+							<data>
+							</data>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>ExecuteAppleScript</string>
+							<key>NewFile</key>
+							<string>/Users/Bapak/Nyoman/Scripts &amp; Automator/In Use/Global/Open Trash.scpt</string>
+							<key>Text</key>
+							<string>tell application "Finder"
+	open trash
+	activate
+end tell
+</string>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+							<key>TrimResults</key>
+							<true/>
+							<key>UseText</key>
+							<true/>
+							<key>Variable</key>
+							<string>Variable</string>
+						</dict>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>Comment</string>
+							<key>Text</key>
+							<string>This is useful for anyone who keeps the Dock hidden.</string>
+							<key>Title</key>
+							<string>Untitled</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Open Trash</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>51</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>4096</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>6F42942F-5734-4CEC-B1FB-2E894E5284A4</string>
+</dict>
+</plist>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Text</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Description</key>
+	<string>Use Control-S to select the current line in a text editor.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>KeyCode</key>
+							<integer>123</integer>
+							<key>MacroActionType</key>
+							<string>SimulateKeystroke</string>
+							<key>Modifiers</key>
+							<integer>256</integer>
+							<key>ReleaseAll</key>
+							<false/>
+						</dict>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>KeyCode</key>
+							<integer>125</integer>
+							<key>MacroActionType</key>
+							<string>SimulateKeystroke</string>
+							<key>Modifiers</key>
+							<integer>512</integer>
+							<key>ReleaseAll</key>
+							<false/>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Select Current Line</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>1</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>4096</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>FD5385E6-63C9-44A7-B3E6-114D4C4C18E3</string>
+</dict>
+</plist>

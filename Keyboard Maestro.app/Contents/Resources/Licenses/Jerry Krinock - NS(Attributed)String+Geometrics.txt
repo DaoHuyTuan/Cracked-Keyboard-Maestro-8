@@ -1,0 +1,10 @@
+ * AUTHOR
+ 
+ Please send bug reports or other comments to Jerry Krinock, jerry@ieee.org
+ Updates may be available at http://sheepsystems.com/sourceCode
+ 
+ * ACKNOWLEDGEMENTS
+ 
+ Thanks very much to Steve Nygard for taking the project one night,
+ recognizing the importance of the line fragment padding and hyphenation
+ factor, and the idea of generalizing to support NSAttributedString.

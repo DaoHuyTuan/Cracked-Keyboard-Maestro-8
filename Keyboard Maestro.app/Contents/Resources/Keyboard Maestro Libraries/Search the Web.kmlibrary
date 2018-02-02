@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Web</string>
+	<key>Category2</key>
+	<string></string>
+	<key>Default</key>
+	<true/>
+	<key>Description</key>
+	<string>Use Control-G to enter a desired search term to be sent to your web browser.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>Alpha</key>
+							<integer>90</integer>
+							<key>Blue</key>
+							<integer>255</integer>
+							<key>Green</key>
+							<integer>152</integer>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<false/>
+							<key>MacroActionType</key>
+							<string>Search</string>
+							<key>Red</key>
+							<integer>0</integer>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+							<key>Title</key>
+							<string>Search the web with Google</string>
+							<key>URL</key>
+							<string>http://www.google.com/search?q=%Search%</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>5</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>4608</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Global Macro Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>Search the Web</string>
+</dict>
+</plist>

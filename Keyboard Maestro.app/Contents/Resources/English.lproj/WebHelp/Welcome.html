@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="author" content="Stairways Software" />
+	<link rel="stylesheet" type="text/css" href="base.css" />
+	<link rel="stylesheet" type="text/css" href="welcome.css" />
+	<script src="prototype.js" type="text/javascript"></script>
+	<script src="welcome.js" type="text/javascript"></script>
+	<title>Welcome to Keyboard Maestro</title>
+</head>
+<body>
+	<div id="main">
+		<div id="Welcome">
+			<div id="screenshot">
+				<img src="screenshot.png" alt="Screenshot" width="589" height="273" />
+			</div>
+			<h1>Welcome to Keyboard Maestro 8</h1>
+			<h2>
+				The best way to get to know Keyboard Maestro is to see it in action.
+			</h2>
+			<p>
+				If you&rsquo;re new to Keyboard Maestro, try the Tutorial to see how you can create a simple macro in just a few steps.
+			</p>
+			<p class="button">
+				<button onclick="PerformTutorial();">Start Tutorial</button>
+			</p>
+		</div>
+		<div id="Assistance" class="hidden answers">
+			<h1>What can I help you with?</h1>
+			<ul class="list">
+				<li><a href="javascript:void(0)" onclick="SwitchTo('GettingStarted');">I need help getting started…</a></li>
+				<li><a href="javascript:void(0)" onclick="SwitchTo('Unexpected');">Something unexpected is happening…</a></li>
+				<li><a href="javascript:void(0)" onclick="SwitchTo('Expected');">Something expected is not happening…</a></li>
+				<li><a href="javascript:void(0)" onclick="SwitchTo('Help');">I want to do something, but I don’t know how…</a></li>
+				<li><a href="javascript:void(0)" onclick="SwitchTo('License');">I need help with my License or Purchase…</a></li>
+			</ul>
+			<p class="back">
+				<a href="javascript:void(0)" onclick="SwitchBack();">Back</a> <span class="triangle">&#9664;</span>
+			</p>
+		</div>
+		<div id="GettingStarted" class="hidden answers">
+			<h1>Getting Started</h1>
+			<p>The best way to start using Keyboard Maestro is to start small and then grow your macros organically, 
+				beginning with simple macros before progressing to more complex solutions.  
+			</p><p>
+				Start by:
+			</p>
+			<ul class="list">
+				<li><a href="javascript:void(0)" onclick="LinkThru('quickstart');">Reading the Quick Start</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="PerformTutorial();">Doing the Tutorial</a> <span class="triangle">&#9656;</span></li>
+				<li>Growing your macros slowly in both number and complexity.</li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('forum');">Joining the forum</a> <span class="triangle">&#9656;</span> and asking for help if you get stuck.</li>
+				<li><a href="javascript:void(0)" onclick="SwitchTo('Transitioning');">If you are transitioning from QuicKeys…</a></li>
+			</ul>
+			<p class="back">
+				<a href="javascript:void(0)" onclick="SwitchBack();">Back</a> <span class="triangle">&#9664;</span>
+			</p>
+		</div>
+		<div id="Transitioning" class="hidden answers">
+			<h1>Transitioning from QuicKeys</h1>
+			<p>Keyboard Maestro and QuicKeys are very different, and this can be a bit jarring initially, but frequently
+				people end up asking “Why didn’t I switch sooner?”.  Hopefully your experience will be similar. 
+			</p><p>
+				You should read the <a href="javascript:void(0)" onclick="LinkThru('transitioning');">Transitioning from QuicKeys article</a>
+				for some tips, and also read the <a href="javascript:void(0)" onclick="LinkThru('quickstart');">Quick Start</a> article
+				to understand the different parts that make up Keyboard Maestro and how they work together, 
+				as well as to become familiar with the terminology used in Keyboard Maestro.
+			</p><p>
+				Start by:
+			</p>
+			<ul class="list">
+				<li><a href="javascript:void(0)" onclick="LinkThru('transitioning');">Reading the Transitioning from QuicKeys article</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('quickstart');">Reading the Quick Start</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="PerformTutorial();">Doing the Tutorial</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('forum');">Joining the forum</a> <span class="triangle">&#9656;</span> and asking for help if you get stuck.</li>
+			</ul>
+			<p class="back">
+				<a href="javascript:void(0)" onclick="SwitchBack();">Back</a> <span class="triangle">&#9664;</span>
+			</p>
+		</div>
+		<div id="Help" class="hidden answers">
+			<h1>Help Creating Macros</h1>
+			<p>If you have not yet created some macros, read the Quick Start to learn the terminology and 
+				do the Tutorial which shows you how to create a simple macro.
+			</p><p>After that, check out the wiki if you like reference material, 
+				or the forum if you like solutions.  Ask on the forum if you need help making a macro to solve any particular problem
+				or for advice on controlling specific applications.
+			</p>
+			<ul class="list">
+				<li><a href="javascript:void(0)" onclick="LinkThru('quickstart');">Quick Start</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="PerformTutorial();">Tutorial</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('wiki');">Wiki</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('forum');">Forum</a> <span class="triangle">&#9656;</span></li>
+			</ul>
+			<p class="back">
+				<a href="javascript:void(0)" onclick="SwitchBack();">Back</a> <span class="triangle">&#9664;</span>
+			</p>
+		</div>
+		<div id="License" class="hidden answers">
+			<h1>License</h1>
+			<p>
+				Keyboard Maestro is free for about a month and then you must purchase a license to continue using it. 
+				Keyboard Maestro is licensed on a per user basis on up to five Macs, so for example, if it is just you using it, you 
+				can use a single license on a desktop and a laptop.
+			</p><p>
+				When you purchase Keyboard Maestro, you are licensed for that major version. Each new major version
+				has required a discounted upgrade purchase (unless you purchased shortly before the release).  Ongoing upgrade
+				fees ensures that we are working as much for you as to attract new customers and is an important part
+				of the feedback loop that means Keyboard Maestro continues to grow in value to you.
+			</p>
+			<ul class="list">
+				<li><a href="javascript:void(0)" onclick="LinkThru('enquiry');">License or Upgrade Enquiry</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('purchasekm');">Purchase a New License</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('revert');">Revert to a Previous Version</a> <span class="triangle">&#9656;</span></li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('kmsupport');">Contact Support</a> <span class="triangle">&#9656;</span></li>
+			</ul>
+			<p class="back">
+				<a href="javascript:void(0)" onclick="SwitchBack();">Back</a> <span class="triangle">&#9664;</span>
+			</p>
+		</div>
+		<div id="Unexpected" class="hidden answers">
+			<h1>Something Unexpected</h1>
+			<p>Generally Keyboard Maestro will only do what you tell it to do, but sometimes that can still result in 
+				something you don’t expect happening.
+			</p><p>
+				Start by:
+			</p>
+			<ul class="list">
+				<li><a href="javascript:void(0)" onclick="PerformQuitEngine();">Quit the Engine</a> <span class="triangle">&#9656;</span></li>
+				<li>If the issue persists, it might not be Keyboard Maestro.</li>
+				<li><a href="javascript:void(0)" onclick="PerformLaunchEngine();">Launch the Engine</a> <span class="triangle">&#9656;</span></li>
+				<li>If the issue returns, check the recently executed macros:<br />
+					<span id="Macros0">&nbsp;&nbsp;&nbsp;<i>None Yet</i><br /></span>
+					<span id="Macros1">&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="EditMacro('abc');" id="Macros1Link">Macro 1</a> <span class="triangle">&#9656;</span><br /></span>
+					<span id="Macros2">&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="EditMacro('abc');" id="Macros2Link">Macro 2</a> <span class="triangle">&#9656;</span><br /></span>
+					<span id="Macros3">&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="EditMacro('abc');" id="Macros3Link">Macro 3</a> <span class="triangle">&#9656;</span><br /></span>
+				</li>
+				<li><a href="javascript:void(0)" onclick="LinkThru('forum');">Ask on the Forum</a> <span class="triangle">&#9656;</span> or <a href="javascript:void(0)" onclick="LinkThru('kmsupport');">Contact Support</a> <span class="triangle">&#9656;</span></li>
+			</ul>
+			<p class="back">
+				<a href="javascript:void(0)" onclick="SwitchBack();">Back</a> <span class="triangle">&#9664;</span>
+			</p>
+		</div>
+		<div id="Expected" class="hidden answers">
+			<h1>Something Not Happening</h1>
+			<p>Let’s check Keyboard Maestro’s status:
+			</p>
+			<ul class="list">
+				<li id="CheckEngine" class="checking"><span class="checking">Is the Engine running?</span>
+						<span class="good">✓ The Engine is running.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('EngineNotRunning');">✗ Engine is not running</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="CheckEngineLogin" class="checking"><span class="checking">Is the Engine configured to Launch at Login?</span>
+						<span class="good">✓ The Engine will launch at login.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('EngineNotLaunchedAtLogin');">✗ Engine is not set to launch at login</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="ChecCommunicate" class="checking"><span class="checking">Can I communicate with the Engine?</span>
+						<span class="good">✓ I can communicate with Engine.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('CannotCommunicateWithEngine');">✗ I cannot communicate with Engine</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="CheckTranslocation" class="checking"><span class="checking">Is Translocation Security a problem?</span>
+						<span class="good">✓ Translocation Security looks OK.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('TranslocationProblem');">✗ Translocation Security is a problem</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="CheckSecureInput" class="checking"><span class="checking">Is Secure Input Mode a problem?</span>
+						<span class="good">✓ Secure Input Mode looks OK.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('SecureInputProblem');">✗ Secure Input Mode is a problem</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="CheckAccessibility" class="checking"><span class="checking">Is Accessibility Permissions a problem?</span>
+						<span class="good">✓ Accessibility Permissions look OK.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('AccessibilityPermissionProblem');">✗ Accessibility Permissions are a problem</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li style="position:relative" id="CheckChecking"><span class="checking">Checking… <span id="spinner"></span></span>
+						<span class="good"><a href="javascript:void(0)" onclick="SwitchTo('Expected2');">Continue</a> <span class="triangle">&#9656;</span></span>
+						<span class="bad"><a href="javascript:void(0)" onclick="RetryCheck();">Retry</a></span>
+				</li>
+			</ul>
+			<p class="back">
+				<a href="javascript:void(0)" onclick="SwitchBack();">Back</a> <span class="triangle">&#9664;</span>
+			</p>
+		</div>
+		<div id="Expected2" class="hidden answers">
+			<h1>Macro Not Firing</h1>
+			<p>Determine whether the macro is firing, or the actions are not working.
+			</p>
+			<p>
+				Select Macro to Check: 
+				<select id="MacroSelection" onchange="MacroSelectionChanged()">
+				</select>
+			</p>
+			<ul class="list">
+				<li id="MacroGroupEnabled" class="checking"><span class="checking">Is the Macro Group Enabled?</span>
+						<span class="good">✓ The Macro Group is Enabled.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('MacroGroupDisabled');">✗ The Macro Group is Disabled</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="MacroGroupActive" class="checking"><span class="checking">Is the Macro Group Active?</span>
+						<span class="good">✓ The Macro Group is Active.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('MacroGroupInactive');">✗ The Macro Group is Inactive</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="MacroEnabled" class="checking"><span class="checking">Is the Macro Enabled?</span>
+						<span class="good">✓ The Macro is Enabled.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('MacroDisabled');">✗ The Macro is Disabled</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="MacroHasTriggers" class="checking"><span class="checking">Does the Macro have a trigger?</span>
+						<span class="good">✓ The Macro has a trigger.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('MacroHasNoTriggers');">✗ The Macro has no triggers</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="MacroHasActions" class="checking"><span class="checking">Does the Macro have some Enabled Actions?</span>
+						<span class="good">✓ The Macro has some Enabled Actions.</span>
+						<span class="bad"><a href="javascript:void(0)" onclick="LinkThru('MacroHasNoActions');">✗ The Macro has no Actions</a> <span class="triangle">&#9656;</span></span>
+						<span class="bad2"><a href="javascript:void(0)" onclick="LinkThru('MacroHasNoEnabledActions');">✗ The Macro has no Enabled Actions</a> <span class="triangle">&#9656;</span></span>
+				</li>
+				<li id="MacroHasTriggered" class="checking"><span class="checking">Waiting for the Macro to Trigger…</span>
+						<span class="good">✓ The Macro has Triggered <span id="TriggerCount">once</span>.</span>
+				</li>
+			</ul>
+			<p class="back">
+				<a href="javascript:void(0)" onclick="SwitchBack();">Back</a> <span class="triangle">&#9664;</span>
+			</p>
+		</div>
+	</div>
+	<div id="side">
+		<div id="SideQuickStart">
+			<p class="sideicon">
+				<img src="quickstart-icon.png" alt="Quick Start Icon" width="184" height="111" onclick="LinkThru('quickstart');" />
+			</p>
+			<h2>Quick Start</h2>
+			<p>
+				Learn about the components of Keyboard&nbsp;Maestro and how they work together.
+			</p>
+			<p>
+				<a href="javascript:void(0)" onclick="LinkThru('quickstart');">Learn more</a> <span class="triangle">&#9656;</span>
+			</p>
+		</div>
+		<div id="SideAssistance">
+			<p class="sideicon">
+				<img src="assistance-icon.png" alt="Assistance Icon" width="197" height="125" onclick="SwitchTo('Assistance');" />
+			</p>
+			<h2>Assistance</h2>
+			<p>
+				Immediately solve problems or
+				get more support options.
+			</p>
+			<p>
+				<a href="javascript:void(0)" onclick="SwitchTo('Assistance');">Learn more</a> <span class="triangle">&#9656;</span>
+			</p>
+		</div>
+		<div id="SideSupport" class="hidden">
+			<p class="sideicon">
+				<img src="support-icon.png" alt="Assistance Icon" width="197" height="125" onclick="LinkThru('kmsupport');" />
+			</p>
+			<h2>Support</h2>
+			<p>
+				Learn how to contact us and
+				customer support options.
+			</p>
+			<p>
+				<a href="javascript:void(0)" onclick="LinkThru('kmsupport');">Learn more</a> <span class="triangle">&#9656;</span>
+			</p>
+		</div>
+	</div>
+	<div id="footerwrap">
+		<div id="footer">
+			<div id="footercheckbox">
+				<input id="autoopen" type="checkbox" onChange="window.KeyboardMaestro.NoteAutoOpenChanged(this.checked)" />
+				<label for="autoopen">Show this window when Keyboard Maestro opens</label>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

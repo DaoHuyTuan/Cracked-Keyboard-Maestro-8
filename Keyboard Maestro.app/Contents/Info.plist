@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>16G29</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>kmmacros</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>MacroExportFile.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Keyboard Maestro Macro File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>kmlibrary</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>MacroExportFile.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Keyboard Maestro Library File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>kmsync</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>MacroExportFile.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Keyboard Maestro Macro Sync File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>zip</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>MacroExportFile.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Keyboard Maestro Extension File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSTypeIsPackage</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>kmaction</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>MacroExportFile.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Keyboard Maestro Plug In Action</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSTypeIsPackage</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>kmactions</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>MacroExportFile.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Keyboard Maestro Actions File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>Keyboard Maestro</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Keyboard Maestro 8.0.3, Copyright 2004-2017 Stairways Software Pty Ltd.</string>
+	<key>CFBundleIconFile</key>
+	<string>kmicon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.stairways.keyboardmaestro.editor</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Keyboard Maestro</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>8.0.3</string>
+	<key>CFBundleSignature</key>
+	<string>MKKM</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>Keyboard Maestro URL</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>keyboardmaestro</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>8.0.3</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>8E3004b</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>16E185</string>
+	<key>DTSDKName</key>
+	<string>macosx10.12</string>
+	<key>DTXcode</key>
+	<string>0833</string>
+	<key>DTXcodeBuild</key>
+	<string>8E3004b</string>
+	<key>KMAboutCopyright</key>
+	<string>© Stairways Software Pty Ltd. 2004-2017</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.10.0</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+	<key>NSContactsUsageDescription</key>
+	<string>Your name and email address will be used to AutoFill contact or feedback forms, and your address card may be used by you in AddressBook text tokens.</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Keyboard Maestro Copyright 2004-2017 Stairways Software Pty Ltd.</string>
+	<key>NSMainNibFile</key>
+	<string>MainApp</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSSupportsAutomaticGraphicsSwitching</key>
+	<true/>
+	<key>OSAScriptingDefinition</key>
+	<string>Editor.sdef</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Keyboard Maestro Trigger File</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.stairways.keyboardmaestro.kmtrigger</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>kmtrigger</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

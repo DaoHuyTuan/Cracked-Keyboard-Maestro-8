@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Clipboards</string>
+	<key>Category2</key>
+	<string>Text</string>
+	<key>Default</key>
+	<false/>
+	<key>Description</key>
+	<string>Use Command-Control-V to paste the previous clipboard. This pastes what you copied immediately prior to copying the current clipboard.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<false/>
+							<key>MacroActionType</key>
+							<string>SetClipboardToPastClipboard</string>
+							<key>Past</key>
+							<integer>1</integer>
+							<key>PastExpression</key>
+							<string>1</string>
+						</dict>
+						<dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<false/>
+							<key>KeyCode</key>
+							<integer>9</integer>
+							<key>MacroActionType</key>
+							<string>SimulateKeystroke</string>
+							<key>Modifiers</key>
+							<integer>256</integer>
+							<key>ReleaseAll</key>
+							<false/>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Name</key>
+					<string>Paste Previous Clipboard</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>9</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>4352</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Clipboards</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>Paste Previous Clipboard</string>
+</dict>
+</plist>

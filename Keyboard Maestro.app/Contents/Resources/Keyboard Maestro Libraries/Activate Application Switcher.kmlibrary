@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string></string>
+	<key>CanDragToMacroGroup</key>
+	<true/>
+	<key>Category1</key>
+	<string>Switchers</string>
+	<key>Category2</key>
+	<string>Application Control</string>
+	<key>Default</key>
+	<true/>
+	<key>Description</key>
+	<string>Activate the application switcher with Command-Tab, replacing the system application switcher.</string>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>IsActive</key>
+			<true/>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>Alpha</key>
+							<integer>50</integer>
+							<key>Blue</key>
+							<integer>128</integer>
+							<key>Green</key>
+							<integer>128</integer>
+							<key>HideOthers</key>
+							<false/>
+							<key>IconSize</key>
+							<integer>64</integer>
+							<key>IncludedApplications</key>
+							<array/>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<false/>
+							<key>MacroActionType</key>
+							<string>ProgramSwitcher</string>
+							<key>MouseRollover</key>
+							<true/>
+							<key>Red</key>
+							<integer>0</integer>
+							<key>SortOrder</key>
+							<string>ByUse</string>
+							<key>SwitcherUnderMouse</key>
+							<false/>
+							<key>WindowType</key>
+							<string>IconGrid</string>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>48</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>256</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>48</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>768</integer>
+							<key>TriggerRepeat</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Switcher Group</string>
+		</dict>
+	</array>
+	<key>UID</key>
+	<string>Activate Application Switcher</string>
+</dict>
+</plist>
